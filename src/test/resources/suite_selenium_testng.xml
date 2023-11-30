@@ -3,7 +3,6 @@
 
 <suite name="proba">
 
-    <parameter name="browser" value="firefox" />
 
     <test name="TestNG practise">
         <classes>
