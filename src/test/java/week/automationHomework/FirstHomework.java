@@ -15,7 +15,8 @@ public class FirstHomework {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
 
-        driver.get("https://www.saucedemo.com/");
+        String initialURL = "https://www.saucedemo.com/";
+        driver.get(initialURL);
 
         WebElement usernameFieldID =
                 driver.findElement(By.id("user-name"));
@@ -31,7 +32,7 @@ public class FirstHomework {
         loginButton.click();
         //fix:
         Assert.assertTrue(driver.findElement(By.cssSelector(".error-message-container.error")).isDisplayed());
-        //Assert.assertEquals(driver.getCurrentUrl().toString(), "https://www.saucedemo.com/inventory.html");
+        Assert.assertEquals(driver.getCurrentUrl().toString(), initialURL);
         driver.quit();
     }
     @Test
