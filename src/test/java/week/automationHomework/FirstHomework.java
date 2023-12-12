@@ -29,8 +29,9 @@ public class FirstHomework {
 
         WebElement loginButton = driver.findElement(By.id("login-button"));
         loginButton.click();
-
-        Assert.assertEquals(driver.getCurrentUrl().toString(), "https://www.saucedemo.com/inventory.html");
+        //fix:
+        Assert.assertTrue(driver.findElement(By.cssSelector(".error-message-container.error")).isDisplayed());
+        //Assert.assertEquals(driver.getCurrentUrl().toString(), "https://www.saucedemo.com/inventory.html");
         driver.quit();
     }
     @Test

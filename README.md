@@ -1,4 +1,5 @@
-### Prvi domaci ####
+## [Test Automation](https://github.com/Subrutina/tiny-stone/tree/main/src/test/java/week/automationHomework)
+### Prvi domaci 
 Prvi domaci iz automatizacije mozete pronaci [ovde](https://github.com/Subrutina/tiny-stone/blob/main/src/test/java/week/automationHomework/FirstHomework.java).
 Zahtev domaceg zadatka bio je napraviti testove za uspesno i neuspesno logovanje.
 
